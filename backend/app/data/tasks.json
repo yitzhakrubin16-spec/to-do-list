@@ -1,0 +1,18 @@
+[
+    {
+        "id": 2,
+        "title": "Learn Python",
+        "description": "Practice Python",
+        "status": "in_progress",
+        "created_at": "2026-11-04T08:00:00Z",
+        "updated_at": "2026-11-04T08:00:00Z"
+    },
+    {
+        "id": 3,
+        "title": "Learn Pydantic",
+        "description": "Practice validation with Flask",
+        "status": "pending",
+        "created_at": "2026-11-08T08:43:25.377862+00:00",
+        "updated_at": "2026-11-08T08:43:25.377862+00:00"
+    }
+]

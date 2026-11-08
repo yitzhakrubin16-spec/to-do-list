@@ -1,0 +1,9 @@
+from flask import Flask  
+from app.routes.tasks_routes import tasks_bp
+
+def create_app():
+    app = Flask(__name__)
+    
+    app.register_blueprint(tasks_bp)
+
+    return app
