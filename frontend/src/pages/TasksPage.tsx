@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getTasks } from "../services/tasksApi";
 import type { Task } from "../types/task";
+import TaskList from "../components/TaskList";
 
 export default function TasksPage() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -47,18 +48,7 @@ export default function TasksPage() {
     <main>
       <h1>My Tasks</h1>
 
-      {tasks.length === 0 ? (
-        <p>No tasks found</p>
-      ) : (
-        <ul>
-          {tasks.map((task) => (
-            <li key={task.id}>
-              <h3>{task.title}</h3>
-              <p>Status: {task.status}</p>
-            </li>
-          ))}
-        </ul>
-      )}
+      <TaskList tasks={tasks} />
     </main>
   );
 }

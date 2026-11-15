@@ -1,6 +1,6 @@
 export type TaskStatus = 
 | 'pending'
-| 'in-progress'
+| 'in_progress'
 | 'completed';
 
 export interface Task {
